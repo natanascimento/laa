@@ -8,7 +8,12 @@ import java.util.Scanner;
 
 /**
  *
- * @author natan
+ * @author Natan Nascimento Oliveira Matos
+ * Matricula: 1181177100
+ * Matéria: Laboratório de Análise de Algoritmo
+ * Turma: N01
+ * 
+ * 3° Questão
  */
 public class Avaliacao2_3_Questao {
   
@@ -54,13 +59,10 @@ public class Avaliacao2_3_Questao {
     
     static void imprimirVerticesEQuantidadeAdjacentes(List[] grafo){
         for (int i=0; i < grafo.length; i++){
-            System.out.println(grafo[i].get(0) + ": ");
-            for (int j=0; j<grafo.length; j++){
-                System.out.print(grafo[i].get(0));
-            }
-//            grafo[i].remove(grafo[i].get(0));
-//            System.out.print(grafo[i]);
-//            System.out.println("(quantidade de vértices adjacentes: " + (grafo[i].size()) + ")");
+            System.out.print(grafo[i].get(0) + ": ");
+            grafo[i].remove(grafo[i].get(0));
+            System.out.print(grafo[i]);
+            System.out.println("(quantidade de vértices adjacentes: " + (grafo[i].size()) + ")");
         }
     }
 }
